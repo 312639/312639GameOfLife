@@ -1,0 +1,23 @@
+﻿<Window x:Class="_312639GameOfLife.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_312639GameOfLife"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="775" Width="625">
+    <Canvas x:Name="canvas">
+        <StackPanel>
+            <Label x:Name="WhatDoLabel"/>
+            <TextBox x:Name="PositionX" MaxLength="1" Width="500"/>
+            <TextBox x:Name="PositionY" MaxLength="1"/>
+            <Button x:Name="PlotPoints" Click="PlotPoints_Click" Content="Plot Points on grid"/>
+            <Button x:Name="StartButton" Content="Start Game!" Click="StartButton_Click"/>
+            <Button x:Name="GamePause" Click="GamePause_Click" Content=" Click to Pause the Game"/>
+            <RadioButton x:Name="PatternOne" Content="Pattern One"/>
+            <RadioButton x:Name="PatternTwo" Content="Pattern Two"/>
+            <RadioButton x:Name="PatternThree" Content="Pattern Three"/>
+            <RadioButton x:Name="PatternFour" Content="Pattern Four"/>
+        </StackPanel>
+    </Canvas>
+</Window>
